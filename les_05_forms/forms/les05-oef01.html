@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>oef 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            margin: 0;
+        }
+
+        input[type="text"] {
+            background-color: lightblue;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box; 
+        }
+
+        input:focus {
+            background-color: white;
+        }
+
+        form {
+            width: 40%;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px; 
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .input-group {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="https://tm-statweb.be/forms.php">
+        <div class="input-group">
+            <label for="naam">Voornaam:</label>
+            <input type="text" id="naam" name="naam" placeholder="Voornaam"> 
+        </div>
+        <div class="input-group">
+            <label for="familienaam">Familienaam:</label>
+            <input type="text" id="familienaam" name="familienaam" placeholder="Familienaam">
+        </div>
+        <input type="submit" value="Registeren">
+    </form>
+</body>
+</html>
